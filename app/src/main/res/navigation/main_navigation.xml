@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/ebookListFragment">
+
+    <fragment
+        android:id="@+id/ebookListFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.EbookListFragment"
+        android:label="EbookListFragment" >
+        <action
+            android:id="@+id/actionEbookDetail"
+            app:destination="@id/ebookDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ebookReadFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.EbookReadFragment"
+        android:label="fragment_ebook_read"
+        tools:layout="@layout/fragment_ebook_read" >
+        <argument
+            android:name="ebookID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ebookDetailFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.EbookDetailFragment"
+        android:label="fragment_ebook_detail"
+        tools:layout="@layout/fragment_ebook_detail" >
+        <action
+            android:id="@+id/actionEbookRead"
+            app:destination="@id/ebookReadFragment" />
+        <argument
+            android:name="ebookID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryListFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.LibraryListFragment"
+        android:label="fragment_library_list"
+        tools:layout="@layout/fragment_library_list" />
+    <fragment
+        android:id="@+id/journalListFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.JournalListFragment"
+        android:label="fragment_journal_list"
+        tools:layout="@layout/fragment_journal_list" />
+</navigation>

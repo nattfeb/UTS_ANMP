@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EbookReadFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Chapter 1"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtChapter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Chapter Title"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor, arcu sed scelerisque mollis, libero justo blandit ligula, sed mattis nulla ipsum ac dui. Duis vel rutrum risus, non tincidunt felis. Morbi sit amet tellus turpis. Praesent nisi mauris, suscipit quis justo nec, consequat tempor ante. In et lectus ut nibh convallis egestas. Cras vulputate neque vitae arcu facilisis hendrerit. Proin ullamcorper erat id vulputate dignissim. Morbi sollicitudin libero at metus dignissim, et aliquam tortor dignissim. Sed scelerisque urna nibh, sed commodo nisl ullamcorper ut. Sed ut mi tempor augue dictum porttitor. Aliquam hendrerit eu sem at mattis. Etiam lectus dolor, eleifend aliquet dictum sit amet, scelerisque sit amet massa. Donec congue est in est luctus semper."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtChapter" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Integer auctor molestie nunc. Etiam ut urna vestibulum, egestas orci mollis, fermentum tortor. Nulla sit amet dolor dolor. Donec a feugiat turpis. In mollis lectus at leo imperdiet mollis. Fusce tristique quis felis sed cursus. Pellentesque feugiat, ipsum et ultrices rhoncus, ligula augue porta turpis, sollicitudin tristique diam leo at eros. Phasellus placerat elit non enim dapibus, consectetur ultricies urna lacinia. Nunc sed dolor tortor. Vestibulum quis auctor nunc, vitae iaculis nunc. Fusce rutrum id felis malesuada bibendum. Ut ac neque condimentum, imperdiet orci eu, suscipit nibh. Nunc volutpat massa vel nunc maximus semper."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Donec tincidunt elementum lectus, non tincidunt magna dignissim vel. Proin consequat et ex tempus blandit. Donec placerat fringilla fringilla. Morbi ultrices ligula dui, sit amet congue metus efficitur at. Aenean vel turpis tortor. Maecenas interdum erat vitae ipsum commodo eleifend."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
