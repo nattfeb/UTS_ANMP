@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/ebookListFragment"
         android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.EbookListFragment"
-        android:label="EbookListFragment" >
+        android:label="E-Book" >
         <action
             android:id="@+id/actionEbookDetail"
             app:destination="@id/ebookDetailFragment" />
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/ebookReadFragment"
         android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.EbookReadFragment"
-        android:label="fragment_ebook_read"
+        android:label="E-Book"
         tools:layout="@layout/fragment_ebook_read" >
         <argument
             android:name="ebookID"
@@ -28,7 +28,7 @@
     <fragment
         android:id="@+id/ebookDetailFragment"
         android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.EbookDetailFragment"
-        android:label="fragment_ebook_detail"
+        android:label="E-Book"
         tools:layout="@layout/fragment_ebook_detail" >
         <action
             android:id="@+id/actionEbookRead"
@@ -40,7 +40,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.LoginFragment"
-        android:label="fragment_login"
+        android:label="Login"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/actionRegister"
@@ -52,7 +52,7 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.RegisterFragment"
-        android:label="fragment_register"
+        android:label="Register"
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/actionEbookList"
