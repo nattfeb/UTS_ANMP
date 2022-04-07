@@ -41,7 +41,7 @@
         android:id="@+id/loginFragment"
         android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/actionRegister"
             app:destination="@id/registerFragment" />
