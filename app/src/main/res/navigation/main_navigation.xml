@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/ebookListFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/ebookListFragment"
@@ -12,6 +12,9 @@
         <action
             android:id="@+id/actionEbookDetail"
             app:destination="@id/ebookDetailFragment" />
+        <argument
+            android:name="username"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/ebookReadFragment"
@@ -35,13 +38,27 @@
             app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/libraryListFragment"
-        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.LibraryListFragment"
-        android:label="fragment_library_list"
-        tools:layout="@layout/fragment_library_list" />
+        android:id="@+id/loginFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionRegister"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/actionLoginToEbookList"
+            app:destination="@id/ebookListFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/journalListFragment"
-        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.JournalListFragment"
-        android:label="fragment_journal_list"
-        tools:layout="@layout/fragment_journal_list" />
+        android:id="@+id/registerFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/actionEbookList"
+            app:destination="@id/ebookListFragment" />
+        <action
+            android:id="@+id/actionRegToLog"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
