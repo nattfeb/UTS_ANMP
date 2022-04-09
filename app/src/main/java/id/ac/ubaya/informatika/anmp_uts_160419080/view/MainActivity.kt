@@ -1,5 +1,6 @@
 package id.ac.ubaya.informatika.anmp_uts_160419080.view
 
+import android.R.id
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,6 +15,12 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import id.ac.ubaya.informatika.anmp_uts_160419080.R
 import kotlinx.android.synthetic.main.activity_main.*
+import android.R.id.toggle
+
+import androidx.drawerlayout.widget.DrawerLayout
+
+
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
@@ -25,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun hideNavigation(){
         bottomNavigationView.visibility = View.GONE
-//        navView.visibility = View.GONE
+        navView.visibility = View.GONE
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,14 +44,14 @@ class MainActivity : AppCompatActivity() {
 //        val appBarConfiguration = AppBarConfiguration(
 //            setOf(
 //                R.id.loginFragment,
-//                R.id.registerFragment
+//                R.id.registerFragment,
 //            )
 //        )
 
         NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
         NavigationUI.setupWithNavController(navView,navController)
 
-//        setupActionBarWithNavController(navController!!, appBarConfiguration!!)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
 
         bottomNavigationView.setupWithNavController(navController)
 
