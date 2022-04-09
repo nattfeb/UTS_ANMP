@@ -36,7 +36,7 @@ class EbookDetailFragment : Fragment() {
         observeViewModel()
 
         btnRead.setOnClickListener {
-            val action = EbookDetailFragmentDirections.actionEbookRead(ebookID.toString())
+            val action = EbookDetailFragmentDirections.actionEbookRead(ebookID)
             Navigation.findNavController(it).navigate(action)
         }
     }

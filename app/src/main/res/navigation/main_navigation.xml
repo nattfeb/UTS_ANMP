@@ -61,4 +61,33 @@
             android:id="@+id/actionRegToLog"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/journalListFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.JournalListFragment"
+        android:label="E-Journal" >
+        <action
+            android:id="@+id/actionJournalDetail"
+            app:destination="@id/journalDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalDetailFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.JournalDetailFragment"
+        android:label="E-Journal"
+        tools:layout="@layout/fragment_journal_detail" >
+        <argument
+            android:name="journalID"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionJournalRead"
+            app:destination="@id/journalReadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalReadFragment"
+        android:name="id.ac.ubaya.informatika.anmp_uts_160419080.view.JournalReadFragment"
+        android:label="E-Journal"
+        tools:layout="@layout/fragment_journal_read" >
+        <argument
+            android:name="journalID"
+            app:argType="string" />
+    </fragment>
 </navigation>
