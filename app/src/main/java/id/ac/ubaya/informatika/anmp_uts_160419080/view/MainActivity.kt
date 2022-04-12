@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun hideNavigation(){
         bottomNavigationView.visibility = View.GONE
-        navView.visibility = View.GONE
+//        navView.visibility = View.GONE
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,13 +45,14 @@ class MainActivity : AppCompatActivity() {
 //            setOf(
 //                R.id.loginFragment,
 //                R.id.registerFragment,
+//                R.id.registerFragment
 //            )
 //        )
 
         NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
         NavigationUI.setupWithNavController(navView,navController)
 
-//        setupActionBarWithNavController(navController, appBarConfiguration)
+//        setupActionBarWithNavController(navController!!, appBarConfiguration!!)
 
         bottomNavigationView.setupWithNavController(navController)
 
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.loginFragment -> hideNavigation()
                 R.id.registerFragment -> hideNavigation()
                 else -> showNavigation()
+
             }
         }
     }
