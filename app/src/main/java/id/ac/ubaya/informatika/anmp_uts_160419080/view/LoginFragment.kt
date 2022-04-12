@@ -24,10 +24,10 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        txtRegisterHere.setOnClickListener {
-            val action = LoginFragmentDirections.actionRegister()
-            Navigation.findNavController(it).navigate(action)
-        }
+//        txtRegisterHere.setOnClickListener {
+//            val action = LoginFragmentDirections.actionRegister()
+//            Navigation.findNavController(it).navigate(action)
+//        }
 
         btnLogin.setOnClickListener {
             val username = txtUsername.text.toString()
